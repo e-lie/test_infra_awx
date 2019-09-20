@@ -1,5 +1,5 @@
 ---
-- hosts: lamp-www
+- hosts: appservers
   become: yes
 
   vars_files:
