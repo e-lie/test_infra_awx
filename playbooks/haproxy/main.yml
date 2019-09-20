@@ -1,0 +1,12 @@
+---
+- hosts: lamp-varnish
+  become: yes
+
+  vars_files:
+    - vars.yml
+
+  roles:
+    - geerlingguy.repo-epel
+    - geerlingguy.firewall
+    - geerlingguy.haproxy
+

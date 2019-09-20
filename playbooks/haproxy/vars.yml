@@ -1,0 +1,10 @@
+---
+firewall_allowed_tcp_ports:
+  - "22"
+  - "80"
+haproxy_backend_servers:
+  - name: www1
+    address: 10.164.210.121:80
+  - name: www2
+    address: 10.164.210.122:80
+haproxy_backend_balance_method: 'leastconn'
