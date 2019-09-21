@@ -5,4 +5,4 @@ vagrant_ansible_inventory_default
 *.retry
 test.sh
 
-roles/*
+roles/geerlingguy.*
